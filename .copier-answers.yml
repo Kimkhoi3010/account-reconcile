@@ -15,7 +15,7 @@ odoo_version: 13.0
 org_name: Odoo Community Association (OCA)
 org_slug: OCA
 rebel_module_groups: []
-repo_description: null
+repo_description: ""
 repo_name: Utilities for account reconciliation
 repo_slug: account-reconcile
 repo_website: https://github.com/OCA/account-reconcile
