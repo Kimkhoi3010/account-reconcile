@@ -64,6 +64,11 @@
                     name="date"
                     attrs="{'readonly': [('is_reconciled', '=', True)]}"
                 />
+                <field
+                    name="statement_id"
+                    optional="hide"
+                    domain="[('journal_id', '=', journal_id)]"
+                />
                 <field name="move_id" optional="hide" required="0" />
                 <field
                     name="payment_ref"
