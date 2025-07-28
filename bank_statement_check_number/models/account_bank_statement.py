@@ -1,7 +1,7 @@
 # Copyright 2021 Ecosoft Co., Ltd. (http://ecosoft.co.th)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class AccountBankStatementLine(models.Model):
@@ -12,9 +12,8 @@ class AccountBankStatementLine(models.Model):
         index=True,
     )
 
-    @api.model
     def _prepare_move_line_default_vals(self, counterpart_account_id=None):
-        move_lines = super()._prepare_move_line_default_vals(counterpart_account_id)
-        for move_line in move_lines:
-            move_line.update({"check_number": self.check_number})
-        return move_lines
+        line_vals_list = super()._prepare_move_line_default_vals(counterpart_account_id)
+        for vals in line_vals_list:
+            vals.update({"check_number": self.check_number})
+        return line_vals_list
