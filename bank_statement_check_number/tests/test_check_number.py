@@ -35,5 +35,4 @@ class TestCheckNumber(AccountTestInvoicingCommon):
         cls.statement_line = cls.statement.line_ids
 
     def test_01_check_number(self):
-
         self.assertEqual(self.statement_line.check_number, "111")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-     <record id="view_bank_statement_tree" model="ir.ui.view">
+    <record id="view_bank_statement_tree" model="ir.ui.view">
         <field name="name">account.bank.statement.form</field>
         <field name="model">account.bank.statement.line</field>
         <field
@@ -26,5 +26,4 @@
             </field>
         </field>
     </record>
-
 </odoo>
