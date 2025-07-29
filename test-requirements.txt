@@ -1,0 +1,1 @@
+odoo-addon-account_move_line_check_number @ git+https://github.com/OCA/account-financial-tools.git@refs/pull/2055/head#subdirectory=account_move_line_check_number
